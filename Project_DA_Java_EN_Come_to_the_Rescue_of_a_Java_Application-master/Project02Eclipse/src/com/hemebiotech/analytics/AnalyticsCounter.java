@@ -1,7 +1,6 @@
 package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,7 +12,7 @@ public class AnalyticsCounter {
 	
 	public AnalyticsCounter() throws IOException  {
 		// first get input
-		BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
+		BufferedReader reader = new BufferedReader (new FileReader("./symptoms.txt"));
 		String line = reader.readLine();
 
 		int lineNumberSymptomsTxt = 0;	// set i to 0 (lineNumber of symptoms.txt?)
@@ -25,7 +24,7 @@ public class AnalyticsCounter {
 				headCount++;
 				System.out.println("number of headaches: " + headCount);
 			}
-			else if (line.equals("rush")) {
+			else if (line.equals("rash")) {
 				rashCount++;
 			}
 			else if (line.contains("pupils")) {
@@ -36,8 +35,8 @@ public class AnalyticsCounter {
 		}
 		
 		// next generate output
-		FileWriter writer = new FileWriter ("result.out");
-		writer.write("headache: " + headacheCount + "\n");
+		FileWriter writer = new FileWriter ("./result.out");
+		writer.write("headache: " + headCount + "\n");
 		writer.write("rash: " + rashCount + "\n");
 		writer.write("dialated pupils: " + pupilCount + "\n");
 		writer.close();
