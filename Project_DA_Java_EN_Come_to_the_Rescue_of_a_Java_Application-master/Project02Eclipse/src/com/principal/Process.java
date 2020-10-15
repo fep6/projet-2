@@ -1,16 +1,19 @@
 package com.principal;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
-import com.input.InputManagement;
-import com.treatment.Classification;
-import com.output.display;
+import com.input.Memorization;
 
 public class Process {
-
-
-	InputManagement im = new InputManagement();
-	Classification c = new Classification();
-	display d = new display();
+	private Memorization m;
 	
+	Process() throws IOException{
+		m = new Memorization();
+	}
+	
+	void doProcess() throws FileNotFoundException{
+		m.doMemorization();
+	}
 	
 }
