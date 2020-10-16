@@ -3,7 +3,7 @@ package com.output;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Display {
+public class Output {
 
 	void doDisplay(){
 		try {

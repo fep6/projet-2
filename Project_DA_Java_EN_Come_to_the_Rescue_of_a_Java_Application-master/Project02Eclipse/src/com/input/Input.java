@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class Memorization {
+public class Input {
 
 	/** 
 	 * N° de ligne dans le fichier (pointeur)
@@ -20,7 +20,7 @@ public class Memorization {
 	private int lineNumberSymptomsTxt;
     private HashMap<Integer,String> symptomsTxt;
 	
-    public Memorization() throws IOException{
+    public Input() throws IOException{
 		symptomsTxt = new HashMap<Integer,String>();
 		lineNumberSymptomsTxt =0;
 		reader = new BufferedReader (new FileReader("./symptoms.txt"));
