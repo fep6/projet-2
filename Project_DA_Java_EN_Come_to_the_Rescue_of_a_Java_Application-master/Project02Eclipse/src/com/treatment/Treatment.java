@@ -7,7 +7,6 @@ public class Treatment {
 	Classification cl;
 	Count co;
 	HashMap<Integer, String> result;
-	Object getTraitment; 
 	
 	public Treatment( HashMap<Integer, String> symptomsTxt) {
 		cl= new Classification(symptomsTxt);
