@@ -32,12 +32,13 @@ public class Input {
 	      try {
 	            while ((thisLine = reader.readLine()) != null) {
 	            lineNumberSymptomsTxt++;
-	            symptomsTxt.put(lineSymptomsTxt , thisLine);
-	            System.out.println(symptomsTxt.values()); 
+	            symptomsTxt.put(lineNumberSymptomsTxt , thisLine);
 	         }       
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      }
+
+        System.out.println(symptomsTxt.keySet()); 
 		System.out.println("Fin doMemorization");	
 	}
 	/**
