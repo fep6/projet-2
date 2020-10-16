@@ -9,7 +9,7 @@ public class Treatment {
 	HashMap<Integer, String> result;
 	
 	public Treatment( HashMap<Integer, String> symptomsTxt) {
-		cl= new Classification(symptomsTxt);
+		cl= new Classification();
 		co= new Count(symptomsTxt);
 	}
 
