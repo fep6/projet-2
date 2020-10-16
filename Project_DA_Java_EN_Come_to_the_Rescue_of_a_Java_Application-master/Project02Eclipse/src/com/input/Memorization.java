@@ -5,18 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Memorization {
 
-	/**
-	 * Nombre de lignes dans le fichier
-	 */
-	private int linesNumberSymptomsTxt;
 	/** 
 	 * N° de ligne dans le fichier (pointeur)
 	 */
-	private int lineSymptomsTxt=0;
+	private int lineSymptomsTxt;
 	/**
 	 * contenu de la ligne
 	 */
