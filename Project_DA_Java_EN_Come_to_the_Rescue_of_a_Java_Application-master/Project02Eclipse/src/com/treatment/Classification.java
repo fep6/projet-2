@@ -14,47 +14,31 @@ public class Classification{
 	Classification(HashMap<Integer, String> symptomsTxt){
 		
 	}
-	
+	/**
+	 * Comparative first letter between value n and n+1 and if equal, the following letters
+	 * @param symptomsTxt
+	 * Coming from Input
+	 */
 	void doClassification(HashMap<Integer, String> symptomsTxt) {
 		int PointerOfHashMap =1;
-		// look for the unicode of the first letter in the value of the Hashmap
-		researchCodeLettersValueSymptomsTxt(symptomsTxt,2);
+		// look for the unicode of the first (1) letter in the value of the Hashmap
+		researchCodeLettersValueSymptomsTxt(symptomsTxt,1);
 		// While the pointer is under the size of the HashMap
 		while (PointerOfHashMap<=symptomsTxt.size()) {
-			
 			PointerOfHashMap++;
-			if (PointerOfHashMap<PointerOfHashMap-1) {
-				// Echange
-				
-				//Comparative descending
-				for (int newPointerOfHashMap=PointerOfHashMap;newPointerOfHashMap<=0;newPointerOfHashMap--) {
-					if (newPointerOfHashMap>newPointerOfHashMap-1) {
-						newPointerOfHashMap=0;
-					}
-					// If the rank letters between   
-					else if ((newPointerOfHashMap==newPointerOfHashMap-1)){
-						
-					}
-					else {
-					// Echange						
-					}			
+			for (int newPointerOfHashMap=PointerOfHashMap;newPointerOfHashMap<=0;newPointerOfHashMap--) {
+				if (newPointerOfHashMap>newPointerOfHashMap-1) {
+					break;
 				}
+				// At the same rank, if the letters between value are the same, then compare othe letters in the value:
+				//Comparative descending   
+				else if ((newPointerOfHashMap==newPointerOfHashMap-1)){
+					
+				}
+				else {
+				// Echange						
+				}			
 			}
-			
-//			if (valeurs(pointer<pointer-1)) {
-//			// Echange
-//			for (int newPointer=pointer;newPointer<=0;newPointer--) {
-//				if (// valeur de
-//						newPointer>=newPointer-1) {
-//					newPointer=0;
-//				}
-//				else if (( // value Hashmap in key: 
-//						newPointer>newPointer-1)){
-//					
-//				}
-//				else {
-//				// Echange						
-//				}
 		}
 	}
 	/**
@@ -65,14 +49,15 @@ public class Classification{
 	 * rank of the letter targeted in the value of the hashMap
 	 * (-1 because HashMap key begin at 1)
 	 */
-	void researchCodeLettersValueSymptomsTxt(HashMap<Integer, String> symptomsTxt, int rank) {
+	void researchCodeLettersValueSymptomsTxt(HashMap<Integer, String> symptomsTxt, int rankLetter) {
 		for (int pointer=1; pointer <= symptomsTxt.size(); pointer++) {
 			// reserch Unicode of the char choosen (/rank) in the value of HashMap
-			Integer buffer= (int) ((symptomsTxt.get(pointer).charAt(rank - 1)));
+			Integer buffer= (int) ((symptomsTxt.get(pointer).charAt(rankLetter - 1)));
 			// Put the code in a new Hashcode to be compare
 			codeLetterValueSymptomsTxt.put(pointer, buffer);
 		}
-		System.out.println("researchCodeLettersValueSymptomsTxt() at the " + rank + " rank is: " + codeLetterValueSymptomsTxt.values());
+		System.out.println("researchCodeLettersValueSymptomsTxt() at the " + rankLetter + " rank is: ");
+		System.out.println(codeLetterValueSymptomsTxt.values());
 	}
 	
 	
