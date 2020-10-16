@@ -2,20 +2,32 @@ package com.principal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import java.util.HashMap;
 import com.input.Input;
+import com.treatment.Treatment;
+import com.output.Output;
 
 public class Process {
-	private Input m;
-	private HashMap <Integer,String> getLineNumberSymptomsTxt;
+	/**
+	 * entry and memorization of getSymptoms.txt 
+	 */
+	private Input i;
+	/**
+	 * classification in alphabetical order and counting of each symptom
+	 */
+	private Treatment t;
+	/**
+	 * output management in result.out
+	 */
+	private Output o;
 	
 	Process() throws IOException{
-		m = new Input();
+		i = new Input();
 	}
-	
 	void doProcess() throws FileNotFoundException{
-		m.doMemorization();
+		i.doInput();
+		t = new Treatment(i.getInput());	
+		t.doTreatment(i.getInput());
+		o = new Output(t.getTraitment());
+		o.doOutput(t.getTraitment());
 	}
-	
 }

@@ -27,7 +27,7 @@ public class Input {
 		thisLine = null;
     }
     
-	public void doMemorization() throws FileNotFoundException{
+	public void doInput() throws FileNotFoundException{
 		System.out.println("Début doMemorization");
 	      try {
 	            while ((thisLine = reader.readLine()) != null) {
@@ -41,18 +41,19 @@ public class Input {
 		System.out.println("Fin doMemorization");	
 	}
 	/**
-	 * symptoms.txt memorized
-	 * @return
-	 */
-	HashMap<Integer,String> getSymptomsTxt(){
-		return symptomsTxt;
-	}
-	/**
 	 * number of line of symptoms.txt
 	 * @return
 	 */
-	int getLineNumberSymptomsTxt() {
+	public int getLineNumberSymptomsTxt() {
 		return lineNumberSymptomsTxt;
+	}
+	/**
+	 * symptoms.txt memorized
+	 * @return
+	 */
+	public HashMap<Integer, String> getInput() {
+		// TODO Auto-generated method stub
+		return symptomsTxt;
 	}
 }
 	
