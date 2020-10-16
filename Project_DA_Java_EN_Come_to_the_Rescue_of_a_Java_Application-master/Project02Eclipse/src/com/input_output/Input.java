@@ -7,33 +7,30 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class Input {
-
-	/**
-	 * contenu de la ligne
-	 */
-	private String thisLine;
+ 
 	private BufferedReader reader;
     private HashMap<Integer,String> symptomsTxt;
 	
     public Input() throws IOException{
 		symptomsTxt = new HashMap<Integer,String>();
 		reader = new BufferedReader (new FileReader("./symptoms.txt"));
-		thisLine = null;
     }
     
 	public void doInput() throws FileNotFoundException{
 		System.out.println("Début doMemorization");
 	      try {
-	    	  	int lineNumberSymptomsTxt =0;
+	    	  	int keyNumberSymptomsTxt =0;
+	    	  	String thisLine;
 	            while ((thisLine = reader.readLine()) != null) {
-	            lineNumberSymptomsTxt++;
-	            symptomsTxt.put(lineNumberSymptomsTxt , thisLine);
+	            	keyNumberSymptomsTxt++;
+	            symptomsTxt.put(keyNumberSymptomsTxt , thisLine);
 	         }       
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      }
 
-        System.out.println(symptomsTxt.keySet()); 
+        System.out.println(symptomsTxt.keySet());
+        System.out.println(symptomsTxt.values());  
 		System.out.println("Fin doMemorization");	
 	}
 	/**
