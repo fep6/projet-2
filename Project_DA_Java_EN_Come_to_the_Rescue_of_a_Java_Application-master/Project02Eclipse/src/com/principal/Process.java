@@ -2,9 +2,10 @@ package com.principal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import com.input.Input;
+
 import com.treatment.Treatment;
-import com.output.Output;
+import com.input_output.Input;
+import com.input_output.Output;
 
 public class Process {
 	/**

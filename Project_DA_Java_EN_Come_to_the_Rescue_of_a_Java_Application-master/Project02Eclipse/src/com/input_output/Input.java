@@ -1,4 +1,4 @@
-package com.input;
+package com.input_output;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
