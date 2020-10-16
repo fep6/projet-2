@@ -8,21 +8,15 @@ import java.util.HashMap;
 
 public class Input {
 
-	/** 
-	 * N° de ligne dans le fichier (pointeur)
-	 */
-	private int lineSymptomsTxt;
 	/**
 	 * contenu de la ligne
 	 */
 	private String thisLine;
 	private BufferedReader reader;
-	private int lineNumberSymptomsTxt;
     private HashMap<Integer,String> symptomsTxt;
 	
     public Input() throws IOException{
 		symptomsTxt = new HashMap<Integer,String>();
-		lineNumberSymptomsTxt =0;
 		reader = new BufferedReader (new FileReader("./symptoms.txt"));
 		thisLine = null;
     }
@@ -30,6 +24,7 @@ public class Input {
 	public void doInput() throws FileNotFoundException{
 		System.out.println("Début doMemorization");
 	      try {
+	    	  	int lineNumberSymptomsTxt =0;
 	            while ((thisLine = reader.readLine()) != null) {
 	            lineNumberSymptomsTxt++;
 	            symptomsTxt.put(lineNumberSymptomsTxt , thisLine);
@@ -40,13 +35,6 @@ public class Input {
 
         System.out.println(symptomsTxt.keySet()); 
 		System.out.println("Fin doMemorization");	
-	}
-	/**
-	 * number of line of symptoms.txt
-	 * @return
-	 */
-	public int getLineNumberSymptomsTxt() {
-		return lineNumberSymptomsTxt;
 	}
 	/**
 	 * symptoms.txt memorized
