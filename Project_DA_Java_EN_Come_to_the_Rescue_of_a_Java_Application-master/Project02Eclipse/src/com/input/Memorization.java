@@ -20,35 +20,20 @@ public class Memorization {
 	/**
 	 * contenu de la ligne
 	 */
-	private String line;
+	private String thisLine;
 	private BufferedReader reader;
-	private int lineNumberSymptomsTxt =0;
+	private int lineNumberSymptomsTxt;
     private HashMap<Integer,String> symptomsTxt;
 	
     public Memorization() throws IOException{
 		symptomsTxt = new HashMap<Integer,String>();
-		// first get input
-//		BufferedReader reader = new BufferedReader (new FileReader("./symptoms.txt"));
-//		line = reader.readLine();
-//		System.out.println("line= " + line);
-		// first get input
-//		try {
-//			reader = new BufferedReader (new FileReader("./symptoms.txt"));
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace(); 
-//		}
-//		try {
-//			line = reader.readLine();
-//			System.out.println("line= " + line);
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		lineNumberSymptomsTxt =0;
+		reader = new BufferedReader (new FileReader("./symptoms.txt"));
+		thisLine = null;
     }
     
 	public void doMemorization() throws FileNotFoundException{
 		System.out.println("Début doMemorization");
-		String thisLine = null;
-		BufferedReader reader = new BufferedReader (new FileReader("./symptoms.txt"));
 	      try {
 	            while ((thisLine = reader.readLine()) != null) {
 	            lineNumberSymptomsTxt++;
@@ -58,28 +43,21 @@ public class Memorization {
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      }
-		
-		
-		
-		
-		
-		
-//		while (line != null) {
-//			lineNumberSymptomsTxt++;
-//			
-//		}
-		
-		
-		
-		
-		
-		
-//			for (Map.Entry<Integer,String> e3 : symptomsTxt.entrySet()) {
-//				lineSymptomsTxt++;
-//				symptomsTxt.put(lineSymptomsTxt , e3.getValue());
-//				System.out.println(e3.getKey() + " " + e3.getValue());
-//		}
 		System.out.println("Fin doMemorization");	
+	}
+	/**
+	 * symptoms.txt memorized
+	 * @return
+	 */
+	HashMap<Integer,String> getSymptomsTxt(){
+		return symptomsTxt;
+	}
+	/**
+	 * number of line of symptoms.txt
+	 * @return
+	 */
+	int getLineNumberSymptomsTxt() {
+		return lineNumberSymptomsTxt;
 	}
 }
 	
