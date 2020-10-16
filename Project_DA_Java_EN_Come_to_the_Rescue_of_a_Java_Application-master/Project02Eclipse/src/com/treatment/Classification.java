@@ -30,13 +30,15 @@ public class Classification{
 				if (newPointerOfHashMap>newPointerOfHashMap-1) {
 					break;
 				}
-				// At the same rank, if the letters between value are the same, then compare othe letters in the value:
-				//Comparative descending   
+				// At the same rank, if the letters between values are the same, then compare other letters in the value: 
 				else if ((newPointerOfHashMap==newPointerOfHashMap-1)){
-					
+					int letterPointer = newPointerOfHashMap;
+					// as long as all letters are the same and not all of them are each compared for each
+					// while ()
 				}
 				else {
-				// Echange						
+				// Exchange
+				// Comparative descending  
 				}			
 			}
 		}
