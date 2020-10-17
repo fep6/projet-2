@@ -46,15 +46,22 @@ public class Classification{
 				if (codeLetterValueSymptomsTxt.get(pointerLetter)<codeLetterValueSymptomsTxt.get(pointerLetter+1)){
 					break;
 				}
-				//Equals to be treated when end of size of value
-				else {
-				// Exchange
-					String buffer;
-					buffer = symptomsTxt.get(pointerLetter);
+				else if (codeLetterValueSymptomsTxt.get(pointerLetter)>codeLetterValueSymptomsTxt.get(pointerLetter+1)){
+				// Exchange betwween symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
+					String buffer = symptomsTxt.get(pointerLetter);
 					symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
 					symptomsTxt.put(pointerLetter+1,buffer);
-				// Comparative descending  
-				}			
+				// Comparative descending 
+					
+					
+					
+					
+					
+				}
+				//Equals to be treated when end of size of value (equals)
+				else {
+					
+				}
 			}
 			PointerHashMap++;
 		}
