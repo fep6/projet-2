@@ -30,24 +30,29 @@ public class Classification{
 		// look for the unicode of the first (1) letter in the value of the Hashmap
 		// codeLetters(symptomsTxt,PointerOfHashMap,1);
 		
-		// Pointing each following couple <key,value> in the  HashMap
+		// Pointing each following couple <key,value> in the HashMap
 		while (PointerHashMap<symptomsTxt.size()) {
 			//newPointerHashMap=2;
 			
 			// Research of the minimum number of character between the 2 values to compare
-			int iteration = Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length());
+			int iterationMax = Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length());
 			
 			// Compare values, by couple of letters in the same rank 
-			for (int pointerLetter=1;pointerLetter<=iteration;pointerLetter++) {
+			for (int pointerLetter=1;pointerLetter<=iterationMax;pointerLetter++) {
 				
-				// Construction of 
+				// Construction of codeLetterValueSymptomsTxt where the letter in its following rank is memorized
 				codeLetters(symptomsTxt,PointerHashMap,pointerLetter);
 				
 				if (codeLetterValueSymptomsTxt.get(pointerLetter)<codeLetterValueSymptomsTxt.get(pointerLetter+1)){
 					break;
 				}
+				//Equals to be treated when end of size of value
 				else {
-				// Exchange 
+				// Exchange
+					String buffer;
+					buffer = symptomsTxt.get(pointerLetter);
+					symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
+					symptomsTxt.put(pointerLetter+1,buffer);
 				// Comparative descending  
 				}			
 			}
