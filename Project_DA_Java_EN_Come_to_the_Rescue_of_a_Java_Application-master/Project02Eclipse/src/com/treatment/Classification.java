@@ -46,6 +46,7 @@ public class Classification{
 				if (codeLetterValueSymptomsTxt.get(pointerLetter)<codeLetterValueSymptomsTxt.get(pointerLetter+1)){
 					break;
 				}
+				// doClassification has to be memorized (instancliable) => n & n+1
 				else if (codeLetterValueSymptomsTxt.get(pointerLetter)>codeLetterValueSymptomsTxt.get(pointerLetter+1)){
 				// Exchange betwween symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
 					String buffer = symptomsTxt.get(pointerLetter);
