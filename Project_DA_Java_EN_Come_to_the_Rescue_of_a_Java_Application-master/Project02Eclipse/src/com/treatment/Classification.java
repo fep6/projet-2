@@ -6,19 +6,15 @@ public class Classification{
 	/**
 	 * where the first leeter of the value of symptomsTxt is memorized
 	 */
-	private HashMap <Integer, Integer> codeLetterValueSymptomsTxt = new HashMap<Integer,Integer>();
+	private HashMap <Integer, Integer> codeLetterValueSymptomsTxt;
 	/**
 	 * pointer values ascending
 	 */
 	private int PointerHashMap;
-	/**
-	 *  pointer values descending
-	 */
-	private int newPointerHashMap;
-	/**
-	 * pointer of the letter
-	 */
-	// private int letterPointer;
+	Classification(){
+		codeLetterValueSymptomsTxt = new HashMap<Integer,Integer>();
+		
+	}
 	/**
 	 * Comparative first letter between value n and n+1 and if equal, the following letters
 	 * @param symptomsTxt
@@ -47,6 +43,8 @@ public class Classification{
 					break;
 				}
 				// doClassification has to be memorized (instancliable) => n & n+1
+				
+				
 				else if (codeLetterValueSymptomsTxt.get(pointerLetter)>codeLetterValueSymptomsTxt.get(pointerLetter+1)){
 				// Exchange betwween symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
 					String buffer = symptomsTxt.get(pointerLetter);
@@ -77,21 +75,21 @@ public class Classification{
 	 * rank of the letter targeted in the value of the hashMap<key,value>
 	 * (-1 because HashMap key begin at 1)
 	 */
-	void codeLetters(HashMap<Integer, String> symptomsTxt, int pointer , int pointerLetter) {
-		for (pointer=PointerHashMap; pointer <= symptomsTxt.size(); pointer++) {
-			// reserch Unicode of the char choosen (/rank) in the value of HashMap
-			int buffer= (int)((symptomsTxt.get(pointer).charAt(pointerLetter - 1)));
-			// Put the code in a new Hashcode to be compare
-			codeLetterValueSymptomsTxt.put(pointer, buffer);
-		}
-		System.out.println("CodeLetters value at the " + pointerLetter + " rank are: ");
-		System.out.println(codeLetterValueSymptomsTxt.values());
-		// System.out.println(codeLetterValueSymptomsTxt.keySet());
-		System.out.println("Nombre de caractères dans value de symptomsTxt à la valeur "+ PointerHashMap + " :");
-		System.out.println((symptomsTxt.get(PointerHashMap)).length());
-		System.out.println("Valeur minimale entre le nombre de caractères entre pointeur n et pointeur n+1:");
-		System.out.println(Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length()));
-	}
+//	void codeLetters(HashMap<Integer, String> symptomsTxt, int pointer , int pointerLetter) {
+//		for (pointer=PointerHashMap; pointer <= symptomsTxt.size(); pointer++) {
+//			// reserch Unicode of the char choosen (/rank) in the value of HashMap
+//			int buffer= (int)((symptomsTxt.get(pointer).charAt(pointerLetter - 1)));
+//			// Put the code in a new Hashcode to be compare
+//			codeLetterValueSymptomsTxt.put(pointer, buffer);
+//		}
+//		System.out.println("CodeLetters value at the " + pointerLetter + " rank are: ");
+//		System.out.println(codeLetterValueSymptomsTxt.values());
+//		// System.out.println(codeLetterValueSymptomsTxt.keySet());
+//		System.out.println("Nombre de caractères dans value de symptomsTxt à la valeur "+ PointerHashMap + " :");
+//		System.out.println((symptomsTxt.get(PointerHashMap)).length());
+//		System.out.println("Valeur minimale entre le nombre de caractères entre pointeur n et pointeur n+1:");
+//		System.out.println(Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length()));
+//	}
 	
 	HashMap<Integer, String> getClassification(){
 		return null;
