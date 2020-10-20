@@ -6,13 +6,15 @@ public class Classification{
 	/**
 	 * where the first leeter of the value of symptomsTxt is memorized
 	 */
-	private HashMap <Integer, Integer> codeLetterValueSymptomsTxt;
+	private HashMap <Integer, Integer> codeLetterValue;
+	// private HashMap <Integer, Integer> codeLetterValue2;
 	/**
 	 * pointer values ascending
 	 */
 	private int PointerHashMap;
 	Classification(){
-		codeLetterValueSymptomsTxt = new HashMap<Integer,Integer>();
+		codeLetterValue = new HashMap<Integer,Integer>();
+		// codeLetterValue2 = new HashMap<Integer,Integer>();
 		
 	}
 	/**
@@ -36,17 +38,17 @@ public class Classification{
 			// Compare values, by couple of letters in the same rank 
 			for (int pointerLetter=1;pointerLetter<=iterationMax;pointerLetter++) {
 				
-				// Construction of codeLetterValueSymptomsTxt where the letter in its following rank is memorized
-				codeLetters(symptomsTxt,PointerHashMap,pointerLetter);
+				// Construction of codeLetterValue where the letter in its following rank is memorized
+				searchCodeLetters(symptomsTxt,PointerHashMap,pointerLetter);
 				
-				if (codeLetterValueSymptomsTxt.get(pointerLetter)<codeLetterValueSymptomsTxt.get(pointerLetter+1)){
+				if (codeLetterValue.get(pointerLetter)<codeLetterValue.get(pointerLetter+1)){
 					break;
 				}
-				// doClassification has to be memorized (instancliable) => n & n+1
+				// doClassification has to be memorized (instanciable) => n & n+1
 				
 				
-				else if (codeLetterValueSymptomsTxt.get(pointerLetter)>codeLetterValueSymptomsTxt.get(pointerLetter+1)){
-				// Exchange betwween symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
+				else if (codeLetterValue.get(pointerLetter)>codeLetterValue.get(pointerLetter+1)){
+				// Exchange between symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
 					String buffer = symptomsTxt.get(pointerLetter);
 					symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
 					symptomsTxt.put(pointerLetter+1,buffer);
@@ -65,6 +67,10 @@ public class Classification{
 			PointerHashMap++;
 		}
 	}
+	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
+		// TODO Auto-generated method stub
+		
+	}
 	/**
 	 * retranscription in unicode of symptomsTxt in letter value in CodeLetterValueSymptomsTxt
 	 * @param symptomsTxt
@@ -80,11 +86,11 @@ public class Classification{
 //			// reserch Unicode of the char choosen (/rank) in the value of HashMap
 //			int buffer= (int)((symptomsTxt.get(pointer).charAt(pointerLetter - 1)));
 //			// Put the code in a new Hashcode to be compare
-//			codeLetterValueSymptomsTxt.put(pointer, buffer);
+//			codeLetterValue.put(pointer, buffer);
 //		}
 //		System.out.println("CodeLetters value at the " + pointerLetter + " rank are: ");
-//		System.out.println(codeLetterValueSymptomsTxt.values());
-//		// System.out.println(codeLetterValueSymptomsTxt.keySet());
+//		System.out.println(codeLetterValue.values());
+//		// System.out.println(codeLetterValue.keySet());
 //		System.out.println("Nombre de caractères dans value de symptomsTxt à la valeur "+ PointerHashMap + " :");
 //		System.out.println((symptomsTxt.get(PointerHashMap)).length());
 //		System.out.println("Valeur minimale entre le nombre de caractères entre pointeur n et pointeur n+1:");
