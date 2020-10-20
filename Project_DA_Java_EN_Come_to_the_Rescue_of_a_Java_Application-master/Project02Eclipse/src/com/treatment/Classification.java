@@ -32,7 +32,7 @@ public class Classification{
 		while (PointerHashMap<symptomsTxt.size()) {
 			//newPointerHashMap=2;
 			
-			// Research of the minimum number of character between the 2 values to compare
+			// Research of the minimum number of characters between the 2 values to compare
 			int iterationMax = Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length());
 			
 			// Compare values, by couple of letters in the same rank 
@@ -48,11 +48,12 @@ public class Classification{
 				
 				
 				else if (codeLetterValue.get(pointerLetter)>codeLetterValue.get(pointerLetter+1)){
-				// Exchange between symptomsTxt<key,Value> and symptomsTxt<key+1,Value>
+				// Exchange between symptomsTxt<key,Value> and symptomsTxt<key+1,Value> (rotation via buffer)
 					String buffer = symptomsTxt.get(pointerLetter);
 					symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
 					symptomsTxt.put(pointerLetter+1,buffer);
-				// Comparative descending 
+				
+					// Comparative descending 
 					
 					
 					
