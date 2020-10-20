@@ -11,11 +11,19 @@ public class Classification{
 	/**
 	 * pointer values ascending
 	 */
-	private int PointerHashMap;
+	private int pointerSymptom;
+	private int pointerLetter;
+	CodeLetters cL1;
+	CodeLetters cL2;
+	
+	
 	Classification(){
 		codeLetterValue = new HashMap<Integer,Integer>();
 		// codeLetterValue2 = new HashMap<Integer,Integer>();
-		
+		cL1 = new CodeLetters();
+		// cL2 = new CodeLetters();
+		pointerSymptom =1;
+		pointerLetter=0;
 	}
 	/**
 	 * Comparative first letter between value n and n+1 and if equal, the following letters
@@ -23,61 +31,41 @@ public class Classification{
 	 * Coming from Input
 	 */
 	void doClassification(HashMap<Integer, String> symptomsTxt) {
-		PointerHashMap =1;
+
+		cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
+		// cL2.searchCodeLetters(symptomsTxt,pointerSymptom+1,pointerLetter);
+		System.out.println("symptomsTxt= " + symptomsTxt.values());
+		System.out.println("cL1.getCodeLetters() = "+ cL1.getCodeLetters());
+		
 		
 		// look for the unicode of the first (1) letter in the value of the Hashmap
 		// codeLetters(symptomsTxt,PointerOfHashMap,1);
 		
 		// Pointing each following couple <key,value> in the HashMap
-		while (PointerHashMap<symptomsTxt.size()) {
-			//newPointerHashMap=2;
-			
-			// Research of the minimum number of characters between the 2 values to compare
-			int iterationMax = Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length());
-			
-			// Compare values, by couple of letters in the same rank 
-			for (int pointerLetter=1;pointerLetter<=iterationMax;pointerLetter++) {
-				
-				// Construction of codeLetterValue where the letter in its following rank is memorized
-				searchCodeLetters(symptomsTxt,PointerHashMap,pointerLetter);
-				
-				if (codeLetterValue.get(pointerLetter)<codeLetterValue.get(pointerLetter+1)){
-					break;
-				}
-				// doClassification has to be memorized (instanciable) => n & n+1
-				
-				
-				else if (codeLetterValue.get(pointerLetter)>codeLetterValue.get(pointerLetter+1)){
-				// Exchange between symptomsTxt<key,Value> and symptomsTxt<key+1,Value> (rotation via buffer)
-					String buffer = symptomsTxt.get(pointerLetter);
-					symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
-					symptomsTxt.put(pointerLetter+1,buffer);
-				
-					// Comparative descending 
-					int pointerLetterDescendant=pointerLetter-1;
-					while (codeLetterValue.get(pointerLetterDescendant)<codeLetterValue.get(pointerLetterDescendant-1)) {
-						
-						// Rotation
-						String buffer2 = symptomsTxt.get(pointerLetter);
-						symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
-						symptomsTxt.put(pointerLetter+1,buffer2);
-						
-
-						pointerLetterDescendant--;
-					}
-				}
-				//Equals to be treated when end of size of value (equals)
-				else {
-					
-				}
-			}
-			PointerHashMap++;
-		}
+//		while (pointerSymptom<symptomsTxt.size()) {
+//			//newPointerHashMap=2;
+//			
+//			System.out.println("symptomsTxt.size() = "+ symptomsTxt.size());
+//			
+//			// Research of the minimum number of characters between the 2 values to compare
+//			int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
+//			
+////			System.out.println("symptomsTxt.get(pointerHashMap+1).length())=" + symptomsTxt.get(pointerSymptom+1).length());	
+////			System.out.println("iterationMax= "+ iterationMax );
+//			
+//			
+//			// Compare values, by couple of letters in the same rank 
+//			for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
+//				
+//
+//			pointerSymptom++;
+//			}
+//		}
 	}
-	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
-		// TODO Auto-generated method stub
-		
-	}
+//	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
+//		// TODO Auto-generated method stub
+//		
+//	}
 	/**
 	 * retranscription in unicode of symptomsTxt in letter value in CodeLetterValueSymptomsTxt
 	 * @param symptomsTxt
@@ -95,13 +83,7 @@ public class Classification{
 //			// Put the code in a new Hashcode to be compare
 //			codeLetterValue.put(pointer, buffer);
 //		}
-//		System.out.println("CodeLetters value at the " + pointerLetter + " rank are: ");
-//		System.out.println(codeLetterValue.values());
-//		// System.out.println(codeLetterValue.keySet());
-//		System.out.println("Nombre de caractères dans value de symptomsTxt à la valeur "+ PointerHashMap + " :");
-//		System.out.println((symptomsTxt.get(PointerHashMap)).length());
-//		System.out.println("Valeur minimale entre le nombre de caractères entre pointeur n et pointeur n+1:");
-//		System.out.println(Math.min(symptomsTxt.get(PointerHashMap).length(),symptomsTxt.get(PointerHashMap+1).length()));
+
 //	}
 	
 	HashMap<Integer, String> getClassification(){
