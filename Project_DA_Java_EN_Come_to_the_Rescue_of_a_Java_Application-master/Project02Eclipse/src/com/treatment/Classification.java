@@ -54,11 +54,17 @@ public class Classification{
 					symptomsTxt.put(pointerLetter+1,buffer);
 				
 					// Comparative descending 
-					
-					
-					
-					
-					
+					int pointerLetterDescendant=pointerLetter-1;
+					while (codeLetterValue.get(pointerLetterDescendant)<codeLetterValue.get(pointerLetterDescendant-1)) {
+						
+						// Rotation
+						String buffer2 = symptomsTxt.get(pointerLetter);
+						symptomsTxt.put(pointerLetter,symptomsTxt.get(pointerLetter+1));
+						symptomsTxt.put(pointerLetter+1,buffer2);
+						
+
+						pointerLetterDescendant--;
+					}
 				}
 				//Equals to be treated when end of size of value (equals)
 				else {
