@@ -6,7 +6,7 @@ public class CodeLetters {
 	int iterationFor;
 	
 	// private int PointerHashMap;
-	private HashMap <Integer, Integer> codeLetterValueSymptomsTxt;
+	HashMap <Integer, Integer> codeLetterValueSymptomsTxt;
 
 	CodeLetters(){
 		codeLetterValueSymptomsTxt = new HashMap<Integer,Integer>();
