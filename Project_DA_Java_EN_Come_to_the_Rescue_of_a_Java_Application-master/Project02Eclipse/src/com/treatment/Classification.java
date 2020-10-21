@@ -29,48 +29,39 @@ public class Classification{
 	 * Coming from Input
 	 */
 	void doClassification(HashMap<Integer, String> symptomsTxt) {
-
-
-		
-//		System.out.println("symptomsTxt= " + symptomsTxt.values());
-//		System.out.println("cL1.getCodeLetters() = "+ cL1.getCodeLetters());
-		
-		
-		// look for the unicode of the first (1) letter in the value of the Hashmap
-		// codeLetters(symptomsTxt,PointerOfHashMap,1);
-		
+	
 		// Pointing each following couple <key,value> in the HashMap
-	while (pointerSymptom<symptomsTxt.size()) {
-			
-//			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
-		pointerLetter=1;
+	for (pointerSymptom=1; pointerSymptom<=symptomsTxt.size(); pointerSymptom++) {
+
+			pointerLetter=1;
+			// look for the unicode of the first (1) letter in the value of the Hashmap
+			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
 			
 //			System.out.println("symptomsTxt.size() = "+ symptomsTxt.size());
 			
-		
-		
-
-			
-//			System.out.println("symptomsTxt.get(pointerHashMap+1).length())=" + symptomsTxt.get(pointerSymptom+1).length());	
-//			System.out.println("iterationMax= "+ iterationMax );
-			
-			
-			// Compare values, by couple of letters between v and pointerSymptom+1 at the same rank (same pointerLetter)
-	
-			pointerSymptom++;
+			if (cL1.getCodeLetters().get(1)<cL1.getCodeLetters().get(2)) {
+				comparisonLetters (symptomsTxt , pointerSymptom , pointerLetter);
+			} else if (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1)) {
+				exchangeValues (symptomsTxt , pointerSymptom );
+			} 
+			System.out.println("pointerSymptom" + pointerSymptom);
 		}
 	System.out.println("newSymptomsTxt= " + symptomsTxt.values());
 	}
 	
-	
-	void comparisonAllLetters (HashMap <Integer, String> symptomsTxt , int pointerSymptom , int pointerLetter )	{
+	/**
+	 * Compare values, by couple of letters between v and pointerSymptom+1 at the same rank (same pointerLetter)
+	 * @param symptomsTxt
+	 * @param pointerSymptom
+	 * @param pointerLetter
+	 */
+	void comparisonLetters (HashMap <Integer, String> symptomsTxt , int pointerSymptom , int pointerLetter )	{
 		
 		// Research of the minimum number of characters between the 2 values to compare
 		int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
-		System.out.println("iterationMax= "+ iterationMax );
+		// System.out.println("iterationMax= "+ iterationMax );
 		
 		for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
-			
 			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
 			
 			if (cL1.getCodeLetters().get(pointerLetter)<cL1.getCodeLetters().get(pointerLetter+1)) {
@@ -79,7 +70,7 @@ public class Classification{
 			} else if (cL1.getCodeLetters().get(pointerLetter)>cL1.getCodeLetters().get(pointerLetter+1)) {
 				break;
 			} 
-				// (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
+				// => (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
 		}
 	}
 	
@@ -88,40 +79,7 @@ public class Classification{
 		String bufferString=symptomsTxt.get(pointerSymptom+1);
 		symptomsTxt.replace(pointerSymptom+1,symptomsTxt.get(pointerSymptom+1),symptomsTxt.get(pointerSymptom));
 		symptomsTxt.replace(pointerSymptom,symptomsTxt.get(pointerSymptom),bufferString);
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-////	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
-////		// TODO Auto-generated method stub
-////		
-////	}
-	/**
-	 * retranscription in unicode of symptomsTxt in letter value in CodeLetterValueSymptomsTxt
-	 * @param symptomsTxt
-	 * source file
-	 * @param pointer
-	 * pointer of the value of HashMap
-	 * @param rankLetter
-	 * rank of the letter targeted in the value of the hashMap<key,value>
-	 * (-1 because HashMap key begin at 1)
-	 */
-//	void codeLetters(HashMap<Integer, String> symptomsTxt, int pointer , int pointerLetter) {
-//		for (pointer=PointerHashMap; pointer <= symptomsTxt.size(); pointer++) {
-//			// reserch Unicode of the char choosen (/rank) in the value of HashMap
-//			int buffer= (int)((symptomsTxt.get(pointer).charAt(pointerLetter - 1)));
-//			// Put the code in a new Hashcode to be compare
-//			codeLetterValue.put(pointer, buffer);
-//		}
-
-//	}
 	
 	HashMap<Integer, String> getClassification(){
 		return null;
