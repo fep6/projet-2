@@ -21,7 +21,7 @@ public class CodeLetters {
 				
 				// reserch Unicode of the char choosen (/rank) in the value of HashMap
 				int bufferInt= (int)((symptomsTxt.get(pointerSymptom).charAt(pointerLetter)));
-				char bufferChar = symptomsTxt.get(pointerSymptom).charAt(pointerLetter);
+//				char bufferChar = symptomsTxt.get(pointerSymptom).charAt(pointerLetter);
 				codeLetterValueSymptomsTxt.put(pointerSymptom, bufferInt);
 
 //				System.out.println("_________________________");
