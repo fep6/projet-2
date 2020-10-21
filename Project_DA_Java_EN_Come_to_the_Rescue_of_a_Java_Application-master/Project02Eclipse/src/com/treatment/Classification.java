@@ -43,37 +43,62 @@ public class Classification{
 	while (pointerSymptom<symptomsTxt.size()) {
 			
 //			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
-
+		pointerLetter=1;
 			
 //			System.out.println("symptomsTxt.size() = "+ symptomsTxt.size());
 			
-			// Research of the minimum number of characters between the 2 values to compare
-			int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
+		
+		
+
 			
 //			System.out.println("symptomsTxt.get(pointerHashMap+1).length())=" + symptomsTxt.get(pointerSymptom+1).length());	
 //			System.out.println("iterationMax= "+ iterationMax );
 			
 			
-			// Compare values, by couple of letters in the same rank 
-			for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
-				
-				cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
-				
-				if (cL1.getCodeLetters().get(pointerLetter)<cL1.getCodeLetters().get(pointerLetter+1)) {
-					//exchange of value (via rotation with a buffer)
-					String bufferString=symptomsTxt.get(pointerSymptom+1);
-					symptomsTxt.replace(pointerSymptom+1,symptomsTxt.get(pointerSymptom+1),symptomsTxt.get(pointerSymptom));
-					symptomsTxt.replace(pointerSymptom,symptomsTxt.get(pointerSymptom),bufferString);
-					break;
-				} else if (cL1.getCodeLetters().get(pointerLetter)>cL1.getCodeLetters().get(pointerLetter+1)) {
-					break;
-				} 
-					// (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
-			}	
+			// Compare values, by couple of letters between v and pointerSymptom+1 at the same rank (same pointerLetter)
+	
 			pointerSymptom++;
 		}
 	System.out.println("newSymptomsTxt= " + symptomsTxt.values());
 	}
+	
+	
+	void comparisonAllLetters (HashMap <Integer, String> symptomsTxt , int pointerSymptom , int pointerLetter )	{
+		
+		// Research of the minimum number of characters between the 2 values to compare
+		int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
+		System.out.println("iterationMax= "+ iterationMax );
+		
+		for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
+			
+			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
+			
+			if (cL1.getCodeLetters().get(pointerLetter)<cL1.getCodeLetters().get(pointerLetter+1)) {
+				exchangeValues (symptomsTxt , pointerSymptom);
+				break;
+			} else if (cL1.getCodeLetters().get(pointerLetter)>cL1.getCodeLetters().get(pointerLetter+1)) {
+				break;
+			} 
+				// (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
+		}
+	}
+	
+	void exchangeValues (HashMap <Integer, String> symptomsTxt , int pointerSymptom ) {
+		//exchange of value (via rotation with a buffer)
+		String bufferString=symptomsTxt.get(pointerSymptom+1);
+		symptomsTxt.replace(pointerSymptom+1,symptomsTxt.get(pointerSymptom+1),symptomsTxt.get(pointerSymptom));
+		symptomsTxt.replace(pointerSymptom,symptomsTxt.get(pointerSymptom),bufferString);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ////	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
 ////		// TODO Auto-generated method stub
 ////		
