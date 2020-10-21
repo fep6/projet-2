@@ -6,7 +6,7 @@ public class Classification{
 	/**
 	 * pointer values ascending
 	 */
-	private int pointerSymptom;
+//	private int pointerSymptom;
 	private int pointerLetter;	
 	/**
 	 * where the first leeter of the value of symptomsTxt is memorized
@@ -17,7 +17,7 @@ public class Classification{
 	Classification(){
 //		codeLetterValue = new HashMap<Integer,Integer>();
 		cL = new CodeLetters() ;
-		pointerSymptom =1;
+//		pointerSymptom =1;
 //		pointerLetter=0;
 	}
 	/**
@@ -31,7 +31,7 @@ public class Classification{
 		//   for (pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
 		
 
-		for (pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
+		for (int pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
 
 			pointerLetter=1;
 			// look for the unicode of the first (1) letter in the value of the Hashmap
@@ -42,7 +42,7 @@ public class Classification{
 			this.comparisonLetters (symptomsTxt , pointerSymptom , pointerLetter);
 
 		}
-	System.out.println("newSymptomsTxt= " + symptomsTxt.values());
+	System.out.println("symptomsTxt(2)= " + symptomsTxt.values());
 	}
 	
 	/**
@@ -61,10 +61,15 @@ public class Classification{
 			cL.searchCodeLetters(symptomsTxt,pointerLetter);
 			
 			if (cL.getCodeLetters().get(pointerLetter)<cL.getCodeLetters().get(pointerLetter+1)) {
+				
+				System.out.println("___________________________________________________________________");
+				System.out.println("cL.getCodeLetters().get(pointerLetter)= " + cL.getCodeLetters().get(pointerLetter));
+				System.out.println("cL.getCodeLetters().get(pointerLetter+1)= " + cL.getCodeLetters().get(pointerLetter+1));
+				
 				this.exchangeValues (symptomsTxt , pointerSymptom);
-				break;
+				continue;
 			} else if (cL.getCodeLetters().get(pointerLetter)>cL.getCodeLetters().get(pointerLetter+1)) {
-				break;
+				continue;
 			} 
 				// => (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
 		}
