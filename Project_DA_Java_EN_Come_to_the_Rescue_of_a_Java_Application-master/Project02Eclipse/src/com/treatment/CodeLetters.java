@@ -12,12 +12,12 @@ public class CodeLetters {
 		codeLetterValueSymptomsTxt = new HashMap<Integer,Integer>();
 	}
 	
-	void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerSymptom, int pointerLetter) {
+	void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerLetter) {
 
 //		System.out.println("===============");
 //		System.out.println("SEARCHCODELETTER");
 
-		for (pointerSymptom=1; pointerSymptom < symptomsTxt.size(); pointerSymptom++) {
+		for (int pointerSymptom=1; pointerSymptom < symptomsTxt.size(); pointerSymptom++) {
 				
 				// reserch Unicode of the char choosen (/rank) in the value of HashMap
 				int bufferInt= (int)((symptomsTxt.get(pointerSymptom).charAt(pointerLetter)));
@@ -29,7 +29,6 @@ public class CodeLetters {
 //				System.out.println("pointerLetter= " + pointerLetter);
 //				System.out.println("ValueSymptomsTxt=" + bufferChar);
 //				System.out.println("codeLetterValueSymptomsTxt= "+ bufferInt);
-
 		}
 		
 	}
