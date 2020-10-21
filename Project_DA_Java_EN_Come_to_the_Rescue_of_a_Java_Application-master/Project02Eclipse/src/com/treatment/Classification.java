@@ -21,7 +21,7 @@ public class Classification{
 		codeLetterValue = new HashMap<Integer,Integer>();
 		cL1 = new CodeLetters() ;
 		pointerSymptom =1;
-		pointerLetter=0;
+//		pointerLetter=0;
 	}
 	/**
 	 * Comparative first letter between value n and n+1 and if equal, the following letters
@@ -32,8 +32,8 @@ public class Classification{
 
 
 		
-		System.out.println("symptomsTxt= " + symptomsTxt.values());
-		System.out.println("cL1.getCodeLetters() = "+ cL1.getCodeLetters());
+//		System.out.println("symptomsTxt= " + symptomsTxt.values());
+//		System.out.println("cL1.getCodeLetters() = "+ cL1.getCodeLetters());
 		
 		
 		// look for the unicode of the first (1) letter in the value of the Hashmap
@@ -42,35 +42,37 @@ public class Classification{
 		// Pointing each following couple <key,value> in the HashMap
 	while (pointerSymptom<symptomsTxt.size()) {
 			
-			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
-		
-			System.out.println("symptomsTxt.size() = "+ symptomsTxt.size());
+//			cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
+
+			
+//			System.out.println("symptomsTxt.size() = "+ symptomsTxt.size());
 			
 			// Research of the minimum number of characters between the 2 values to compare
 			int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
 			
-			System.out.println("symptomsTxt.get(pointerHashMap+1).length())=" + symptomsTxt.get(pointerSymptom+1).length());	
-			System.out.println("iterationMax= "+ iterationMax );
+//			System.out.println("symptomsTxt.get(pointerHashMap+1).length())=" + symptomsTxt.get(pointerSymptom+1).length());	
+//			System.out.println("iterationMax= "+ iterationMax );
 			
 			
 			// Compare values, by couple of letters in the same rank 
 			for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
-				if (cL1.getCodeLetters().get(pointerSymptom)<cL1.getCodeLetters().get(pointerSymptom+1)) {
-					
-				} else if (cL1.getCodeLetters().get(pointerSymptom)>cL1.getCodeLetters().get(pointerSymptom+1)) {
-					
-					
-					
+				
+				cL1.searchCodeLetters(symptomsTxt,pointerSymptom,pointerLetter);
+				
+				if (cL1.getCodeLetters().get(pointerLetter)<cL1.getCodeLetters().get(pointerLetter+1)) {
+					//exchange of value (via rotation with a buffer)
+					String bufferString=symptomsTxt.get(pointerSymptom+1);
+					symptomsTxt.replace(pointerSymptom+1,symptomsTxt.get(pointerSymptom+1),symptomsTxt.get(pointerSymptom));
+					symptomsTxt.replace(pointerSymptom,symptomsTxt.get(pointerSymptom),bufferString);
 					break;
-				} else // (cL1.getCodeLetters().get(pointerSymptom)==cL1.getCodeLetters().get(pointerSymptom+1))
-					{
-					//Rotation
-					
-					
+				} else if (cL1.getCodeLetters().get(pointerLetter)>cL1.getCodeLetters().get(pointerLetter+1)) {
 					break;
-				}
-			}
-		}	
+				} 
+					// (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
+			}	
+			pointerSymptom++;
+		}
+	System.out.println("newSymptomsTxt= " + symptomsTxt.values());
 	}
 ////	private void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerHashMap2, int pointerLetter) {
 ////		// TODO Auto-generated method stub

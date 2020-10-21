@@ -14,8 +14,8 @@ public class CodeLetters {
 	
 	void searchCodeLetters(HashMap<Integer, String> symptomsTxt, int pointerSymptom, int pointerLetter) {
 
-		System.out.println("===============");
-		System.out.println("SEARCHCODELETTER");
+//		System.out.println("===============");
+//		System.out.println("SEARCHCODELETTER");
 
 		for (pointerSymptom=1; pointerSymptom < symptomsTxt.size(); pointerSymptom++) {
 				
@@ -23,11 +23,12 @@ public class CodeLetters {
 				int bufferInt= (int)((symptomsTxt.get(pointerSymptom).charAt(pointerLetter)));
 				char bufferChar = symptomsTxt.get(pointerSymptom).charAt(pointerLetter);
 				codeLetterValueSymptomsTxt.put(pointerSymptom, bufferInt);
-				System.out.println("_________________________");
-				System.out.println("pointerSymptom= " + pointerSymptom);
-				System.out.println("pointerLetter= " + pointerLetter);
-				System.out.println("ValueSymptomsTxt=" + bufferChar);
-				System.out.println("codeLetterValueSymptomsTxt= "+ bufferInt);
+
+//				System.out.println("_________________________");
+//				System.out.println("pointerSymptom= " + pointerSymptom);
+//				System.out.println("pointerLetter= " + pointerLetter);
+//				System.out.println("ValueSymptomsTxt=" + bufferChar);
+//				System.out.println("codeLetterValueSymptomsTxt= "+ bufferInt);
 
 		}
 		
