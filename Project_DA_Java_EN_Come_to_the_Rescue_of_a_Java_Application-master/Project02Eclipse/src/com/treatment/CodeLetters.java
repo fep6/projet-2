@@ -21,14 +21,13 @@ public class CodeLetters {
 				
 				// reserch Unicode of the char choosen (/rank) in the value of HashMap
 				int bufferInt= (int)((symptomsTxt.get(pointerSymptom).charAt(pointerLetter)));
-//				char bufferChar = symptomsTxt.get(pointerSymptom).charAt(pointerLetter);
 				codeLetterValueSymptomsTxt.put(pointerSymptom, bufferInt);
 
 //				System.out.println("_________________________");
 //				System.out.println("pointerSymptom= " + pointerSymptom);
 //				System.out.println("pointerLetter= " + pointerLetter);
-//				System.out.println("ValueSymptomsTxt=" + bufferChar);
-//				System.out.println("codeLetterValueSymptomsTxt= "+ bufferInt);
+//				System.out.println("bufferInt=" + bufferInt);
+				
 		}
 		
 	}

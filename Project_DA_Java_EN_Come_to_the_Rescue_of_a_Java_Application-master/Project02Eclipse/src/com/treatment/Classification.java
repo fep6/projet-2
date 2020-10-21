@@ -53,6 +53,10 @@ public class Classification{
 	 */
 	void comparisonLetters (HashMap <Integer, String> symptomsTxt , int pointerSymptom , int pointerLetter )	{
 		
+		System.out.println("______________________");
+		System.out.println("Comparaison de lettre, pointerSymptom = " + pointerSymptom + " pointerLetter=" + pointerLetter);
+		
+		
 		// Research of the minimum number of characters between the 2 values to compare
 		int iterationMax = Math.min(symptomsTxt.get(pointerSymptom).length(),symptomsTxt.get(pointerSymptom+1).length());
 		// System.out.println("iterationMax= "+ iterationMax );
@@ -60,16 +64,16 @@ public class Classification{
 		for (pointerLetter=1;pointerLetter<iterationMax;pointerLetter++) {
 			cL.searchCodeLetters(symptomsTxt,pointerLetter);
 			
-			if (cL.getCodeLetters().get(pointerLetter)<cL.getCodeLetters().get(pointerLetter+1)) {
-				
-				System.out.println("___________________________________________________________________");
-				System.out.println("cL.getCodeLetters().get(pointerLetter)= " + cL.getCodeLetters().get(pointerLetter));
-				System.out.println("cL.getCodeLetters().get(pointerLetter+1)= " + cL.getCodeLetters().get(pointerLetter+1));
-				
+			System.out.println("CodeL+0: " + cL.getCodeLetters().get(pointerLetter) + " CodeL+1: " + cL.getCodeLetters().get(pointerLetter+1));
+			
+			if (cL.getCodeLetters().get(pointerLetter+1)==cL.getCodeLetters().get(pointerLetter)) {
+				continue;
+			}
+			else if (cL.getCodeLetters().get(pointerLetter+1)<cL.getCodeLetters().get(pointerLetter)) {				
 				this.exchangeValues (symptomsTxt , pointerSymptom);
-				continue;
-			} else if (cL.getCodeLetters().get(pointerLetter)>cL.getCodeLetters().get(pointerLetter+1)) {
-				continue;
+				break;
+			} else if (cL.getCodeLetters().get(pointerLetter+1)>cL.getCodeLetters().get(pointerLetter)) {
+				break;
 			} 
 				// => (cL1.getCodeLetters().get(pointerLetter)==cL1.getCodeLetters().get(pointerLetter+1))
 		}
