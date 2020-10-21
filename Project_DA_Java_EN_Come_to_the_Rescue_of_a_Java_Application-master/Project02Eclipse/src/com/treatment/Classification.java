@@ -1,5 +1,4 @@
 package com.treatment;
-
 import java.util.HashMap;
 
 public class Classification{
@@ -15,10 +14,7 @@ public class Classification{
 	
 	
 	Classification(){
-//		codeLetterValue = new HashMap<Integer,Integer>();
 		cL = new CodeLetters() ;
-//		pointerSymptom =1;
-//		pointerLetter=0;
 	}
 	/**
 	 * Comparative first letter between value n and n+1 and if equal, the following letters
@@ -26,13 +22,10 @@ public class Classification{
 	 * Coming from Input
 	 */
 	void doClassification(HashMap<Integer, String> symptomsTxt) {
-	
-		// Pointing each following couple <key,value> in the HashMap
-		//   for (pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
-		
 
-		for (int pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
 
+//  		Pointing each following couple <key,value> in the HashMap		
+ 		for (int pointerSymptom=1; pointerSymptom<symptomsTxt.size(); pointerSymptom++) {
 			pointerLetter=1;
 			// look for the unicode of the first (1) letter in the value of the Hashmap
 			cL.searchCodeLetters(symptomsTxt,pointerLetter);

@@ -23,10 +23,11 @@ public class CodeLetters {
 				int bufferInt= (int)((symptomsTxt.get(pointerSymptom).charAt(pointerLetter)));
 				codeLetterValueSymptomsTxt.put(pointerSymptom, bufferInt);
 
-//				System.out.println("_________________________");
-//				System.out.println("pointerSymptom= " + pointerSymptom);
-//				System.out.println("pointerLetter= " + pointerLetter);
-//				System.out.println("bufferInt=" + bufferInt);
+				System.out.println("_________________________");
+				System.out.println("pointerSymptom= " + pointerSymptom);
+				System.out.println("pointerLetter= " + pointerLetter);
+				System.out.println("bufferInt=" + bufferInt);
+				System.out.println("codeLetterValueSymptomsTxt= " + codeLetterValueSymptomsTxt.values());
 				
 		}
 		
