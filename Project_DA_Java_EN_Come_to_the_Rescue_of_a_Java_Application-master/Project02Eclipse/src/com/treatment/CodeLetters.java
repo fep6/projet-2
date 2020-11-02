@@ -3,7 +3,7 @@ package com.treatment;
 import java.util.HashMap;
 
 public class CodeLetters {
-	int iterationFor;
+//	int iterationFor;
 	
 	// private int PointerHashMap;
 	HashMap <Integer, Integer> codeLetterValueSymptomsTxt;
