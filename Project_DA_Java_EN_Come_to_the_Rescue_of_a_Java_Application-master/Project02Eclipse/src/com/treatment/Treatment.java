@@ -1,25 +1,31 @@
 package com.treatment;
 
+
+import java.io.IOException;
 import java.util.HashMap;
+
+import com.input_output.Input;
 
 public class Treatment {
 	
-	Classification cl;
-	Count co;
-	HashMap<Integer, String> result;
+	private Input i;
+	HashMap<Integer, String> treated;
 	
-	public Treatment( HashMap<Integer, String> symptomsTxt) {
-		cl= new Classification();
-		co= new Count(symptomsTxt);
-	}
-
-	public void doTreatment( HashMap<Integer, String> symptomsTxt){
-		cl.doClassification(symptomsTxt);
-		co.doCount(symptomsTxt);
+	public Treatment(){
+		try {
+			i=new Input();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
-	public HashMap<Integer, String> getTraitment(){
-		return result;
+	public void doTreatment(){
+		
+	}
+	
+	public HashMap<Integer, String> getTreatment (){
+		return treated;
 	}
 	
 }

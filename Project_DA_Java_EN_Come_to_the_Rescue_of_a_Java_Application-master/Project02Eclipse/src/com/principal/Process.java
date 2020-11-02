@@ -18,7 +18,7 @@ public class Process {
 	private Treatment t;
 	/**
 	 * output management in result.out
-	 */
+	 et*/
 	private Output o;
 	
 	Process() throws IOException{
@@ -26,9 +26,9 @@ public class Process {
 	}
 	void doProcess() throws FileNotFoundException{
 		i.doInput();
-		t = new Treatment(i.getInput());	
-		t.doTreatment(i.getInput());
-		o = new Output(t.getTraitment());
-		o.doOutput(t.getTraitment());
+		t = new Treatment();	
+		t.doTreatment();
+		o = new Output(t.getTreatment());
+		o.doOutput(t.getTreatment());
 	}
 }
