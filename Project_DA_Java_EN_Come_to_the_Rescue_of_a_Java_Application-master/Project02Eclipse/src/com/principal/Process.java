@@ -2,6 +2,7 @@ package com.principal;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 
 import com.treatment.Treatment;
 import com.input_output.Input;
@@ -21,13 +22,13 @@ public class Process {
 	 et*/
 	private Output o;
 	
-	Process() throws IOException{
+	Process() throws IOException {
 		i = new Input();
 	}
 	void doProcess() throws FileNotFoundException{
 		i.doInput();
 		t = new Treatment();	
-		t.doTreatment();
+		t.doTreatment(i.getInput());
 		o = new Output(t.getTreatment());
 		o.doOutput(t.getTreatment());
 	}

@@ -15,12 +15,11 @@ public class Treatment {
 		try {
 			i=new Input();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	public void doTreatment(){
+	public void doTreatment(HashMap<Integer, String> hM){
 		
 	}
 	
