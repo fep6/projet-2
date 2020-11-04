@@ -38,7 +38,6 @@ public class Input {
 	 * @return
 	 */
 	public HashMap<Integer, String> getInput() {
-		// TODO Auto-generated method stub
 		return symptomsTxt;
 	}
 }
