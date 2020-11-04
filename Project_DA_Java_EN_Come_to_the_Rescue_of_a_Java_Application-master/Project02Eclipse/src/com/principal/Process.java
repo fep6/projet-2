@@ -29,7 +29,9 @@ public class Process {
 		i.doInput();
 		t = new Treatment();
 		t.doTreatment(( HashMap<Integer,String> )i.getInput());
-		System.out.println("i= " + i);
+		
+		System.out.println("i= " + i.getInput());
+		
 		o = new Output(t.getTreatment());
 		o.doOutput(t.getTreatment());
 	}

@@ -1,23 +1,24 @@
 package com.treatment;
 
 
-import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
-
-import com.input_output.Input;
+import java.util.TreeSet;
 
 public class Treatment {
-	
-	// private Input i;
-	HashMap<Integer, String> treated;
+
+	HashMap<Integer,String> treated;
+
+    TreeSet<String> tsetString = new TreeSet();
 	
 	public Treatment(){
 
 	}
 	
-	public void doTreatment(HashMap<Integer, String> hashMap){
+	public void doTreatment(HashMap<Integer,String> symptomsTxt ){
 		// System.out.println("input en Treatment: "+ ((Map<Integer, String>) i));
+		tsetString .addAll( symptomsTxt.values());
+		System.out.println("tsetString= "+ tsetString);
+		
 	}
 	public HashMap<Integer, String> getTreatment (){
 		return treated;
