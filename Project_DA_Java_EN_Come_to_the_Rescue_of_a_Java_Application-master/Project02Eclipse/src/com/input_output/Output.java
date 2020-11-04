@@ -8,7 +8,7 @@ public class Output {
 
 	public Output (HashMap<Integer, String> symptomsTxt){
 		
-	}
+	} 
 	
 	public void doOutput(HashMap<Integer, String> symptomsTxt){
 		try {
