@@ -8,15 +8,15 @@ public class Treatment {
 
 	HashMap<Integer,String> treated;
 
-    TreeSet<String> tsetString = new TreeSet();
+    TreeSet<String> tsetString;
 	
 	public Treatment(){
-
+		tsetString = new TreeSet();
 	}
 	
 	public void doTreatment(HashMap<Integer,String> symptomsTxt ){
 		// System.out.println("input en Treatment: "+ ((Map<Integer, String>) i));
-		tsetString .addAll( symptomsTxt.values());
+		tsetString .addAll( symptomsTxt.values() );
 		System.out.println("tsetString= "+ tsetString);
 		
 	}

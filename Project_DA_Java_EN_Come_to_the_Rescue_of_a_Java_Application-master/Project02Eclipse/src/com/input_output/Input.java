@@ -30,7 +30,7 @@ public class Input {
 	      }
 
         System.out.println(symptomsTxt.keySet());
-        System.out.println("symptomsTxt(1)= " + symptomsTxt.values());  
+        System.out.println("symptomsTxt()= " + symptomsTxt.values());  
 		System.out.println("Fin doMemorization");	
 	}
 	/**
