@@ -29,7 +29,7 @@ public class Process {
 	void doProcess() throws FileNotFoundException{
 		i.doInput();
 		
-		System.out.println("i= " + i.getInput());
+		// System.out.println("i= " + i.getInput());
 		
 		t.doTreatment( i.getInput());
 		o = new Output(t.getTreatment());
