@@ -24,14 +24,14 @@ public class Process {
 	
 	Process() throws IOException {
 		i = new Input();
+		t = new Treatment();
 	}
 	void doProcess() throws FileNotFoundException{
 		i.doInput();
-		t = new Treatment();
 		
 		System.out.println("i= " + i.getInput());
 		
-		t.doTreatment(( HashMap<Integer,String> )i.getInput());
+		t.doTreatment( i.getInput());
 		o = new Output(t.getTreatment());
 		o.doOutput(t.getTreatment());
 	}
