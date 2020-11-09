@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class Input {
  
 	private BufferedReader reader;
-    private ArrayList symptomsTxt;
+    private ArrayList<String> symptomsTxt;
 	
     public Input() throws IOException{
 		symptomsTxt = new ArrayList <String>();
@@ -18,21 +18,17 @@ public class Input {
     }
     
 	public void doInput() throws FileNotFoundException{
-		System.out.println("Début doMemorization");
 	      try {
-	    	  	int keyNumberSymptomsTxt =0;
 	    	  	String thisLine;
 	            while ((thisLine = reader.readLine()) != null) {
-	            	keyNumberSymptomsTxt++;
-	            symptomsTxt.add(thisLine);
+	            	symptomsTxt.add(thisLine);
 	         }       
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      }
 
-        System.out.println(symptomsTxt);
         System.out.println("symptomsTxt()= " + symptomsTxt);  
-		System.out.println("Fin doMemorization");	
+		System.out.println("______________________________");	
 	}
 	/**
 	 * symptoms.txt memorized
