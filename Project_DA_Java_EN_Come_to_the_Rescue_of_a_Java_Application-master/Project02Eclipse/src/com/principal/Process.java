@@ -26,11 +26,8 @@ public class Process {
 		i = new Input();
 		t = new Treatment();
 	}
-	void doProcess() throws FileNotFoundException{
+	void doProcess() throws IOException{
 		i.doInput();
-		
-		// System.out.println("i= " + i.getInput());
-		
 		t.doTreatment( i.getInput());
 		o = new Output(t.getTreatment());
 		o.doOutput(t.getTreatment());

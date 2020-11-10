@@ -36,19 +36,7 @@ public class Treatment {
 			key++;
 			// Writing in the value TreeMap at the good key
 			tMapString.put(value,key);
-
 		}
-		
-//		// Print ( https://www.developpez.net/forums/d1109312/java/general-java/api-standards-tierces/collection-stream/compter-nombre-repetitions-valeurs-tableau/ )
-//		// Recover all the keys
-//		for (String value : tMapString.keySet()) {
-//			//Recover one key
-//			int nombre1 = tMapString.get(value);
-//			// Print
-//			System.out.println("[" + value + "] --> " + nombre1);
-//		}
-//		// End of print
-//		System.out.println("______________________________");
 	}
 	
 	public TreeMap<String, Integer> getTreatment() {

@@ -22,7 +22,7 @@ public class Input {
 	    	  	String thisLine;
 	            while ((thisLine = reader.readLine()) != null) {
 	            	symptomsTxt.add(thisLine);
-	         }       
+	            }       
 	      } catch(Exception e) {
 	         e.printStackTrace();
 	      }

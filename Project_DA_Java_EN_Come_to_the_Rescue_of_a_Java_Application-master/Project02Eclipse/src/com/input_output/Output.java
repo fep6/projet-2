@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.util.TreeMap;
 
 public class Output {
-
-	public Output (TreeMap <String,Integer> tMapString){
-		
+	
+	FileWriter writer; 
+	
+	public Output (TreeMap <String,Integer> tMapString) throws IOException{
+		writer = new FileWriter ("./result.out");
 	}
 	
 	public void doOutput(TreeMap <String,Integer> tMapString){
@@ -20,13 +22,11 @@ public class Output {
 				int nombre1 = tMapString.get(value);
 				// Print
 				System.out.println("[" + value + "] --> " + nombre1);
+				writer.write("[" + value + "] --> " + nombre1);
 			}
 			// End of print
 			System.out.println("______________________________");
-			
-			
-			FileWriter writer = new FileWriter ("./result.out");
-			
+			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
