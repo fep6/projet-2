@@ -22,7 +22,7 @@ public class Output {
 				int nombre1 = tMapString.get(value);
 				// Print
 				System.out.println("[" + value + "] --> " + nombre1);
-				writer.write("[" + value + "] --> " + nombre1);
+				writer.write("[" + value + "] --> " + nombre1 + "\n");
 			}
 			// End of print
 			System.out.println("______________________________");
