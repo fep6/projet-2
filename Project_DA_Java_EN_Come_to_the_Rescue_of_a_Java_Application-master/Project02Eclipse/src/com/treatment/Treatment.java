@@ -8,9 +8,9 @@ import java.util.TreeMap;
 
 public class Treatment {
 
-	// HashMap<Integer,String> treated;
 
     private TreeMap<String,Integer> tMapString;
+    Integer key; 
 
     
 	public Treatment(){
@@ -26,13 +26,13 @@ public class Treatment {
 		
 		// Integration of symptomTxt in a TreeMap
 		for (String value : symptomsTxt) {
-			// key recovery
+			// key recovery from tMapString
 			Integer key = tMapString.get(value);
-			// If an empty key is found then let it intepreted by 0
+			// If an empty key is found then let it intepreted by 0 (initilisation) => First time symptom found in symptomsTxt
 			if (key==null) {
 				key =0;
 			}
-			// The index has to begin at 1
+			// The index has to begin at 1, increment the count
 			key++;
 			// Writing in the value TreeMap at the good key
 			tMapString.put(value,key);
