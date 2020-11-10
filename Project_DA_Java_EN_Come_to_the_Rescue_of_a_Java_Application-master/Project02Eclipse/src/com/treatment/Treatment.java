@@ -23,18 +23,18 @@ public class Treatment {
 		// System.out.println("______________________________");
 		
 		
-		// Integration of symptomTxt in a TreeMap
-		for (String value : symptomsTxt) {
+		// Integration of symptomTxt in a TreeMap the sysptom is becoming a key, an ID)
+		for (String key : symptomsTxt) {
 			// key recovery from tMapString
-			Integer key = tMapString.get(value);
+			Integer value = tMapString.get(key);
 			// If an empty key is found then let it intepreted by 0 (initilisation) => First time symptom found in symptomsTxt
-			if (key==null) {
-				key =0;
+			if (value==null) {
+				value =0;
 			}
-			// The index has to begin at 1, increment the count
-			key++;
-			// Writing in the value TreeMap (The first member of the couple becomes the key, incrementing 'key', this one becoming the value  (the count))
-			tMapString.put(value,key);
+			// The value has to begin at 1, incrementing the count
+			value++;
+			// Writing in the value TreeMap (the count) at the good key (unic symptom)
+			tMapString.put(key,value);
 		}
 	}
 	
