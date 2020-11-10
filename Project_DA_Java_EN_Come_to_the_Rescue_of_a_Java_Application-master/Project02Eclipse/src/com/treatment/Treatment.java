@@ -10,7 +10,6 @@ public class Treatment {
 
 
     private TreeMap<String,Integer> tMapString;
-    Integer key; 
 
     
 	public Treatment(){
@@ -34,7 +33,7 @@ public class Treatment {
 			}
 			// The index has to begin at 1, increment the count
 			key++;
-			// Writing in the value TreeMap at the good key
+			// Writing in the value TreeMap (The first member of the couple becomes the key, incrementing 'key', this one becoming the value  (the count))
 			tMapString.put(value,key);
 		}
 	}
