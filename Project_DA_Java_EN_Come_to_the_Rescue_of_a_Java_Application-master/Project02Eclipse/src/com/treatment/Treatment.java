@@ -17,6 +17,7 @@ public class Treatment {
 	}
 	
 	public void doTreatment(ArrayList<String> symptomsTxt ){
+		
 		// sort the ArrayList in ascending order
 		// symptomsTxt.sort(Comparator.naturalOrder());
 		// System.out.println("Fichier classé= " + symptomsTxt);  
@@ -25,9 +26,9 @@ public class Treatment {
 		
 		// Integration of symptomTxt in a TreeMap the sysptom is becoming a key, an ID)
 		for (String key : symptomsTxt) {
-			// key recovery from tMapString
+			// value recovery from tMapString at he key
 			Integer value = tMapString.get(key);
-			// If an empty key is found then let it intepreted by 0 (initilisation) => First time symptom found in symptomsTxt
+			// If an empty value (no count done)  is found then let it intepreted by 0 (initilisation) => First time symptom found in symptomsTxt
 			if (value==null) {
 				value =0;
 			}
