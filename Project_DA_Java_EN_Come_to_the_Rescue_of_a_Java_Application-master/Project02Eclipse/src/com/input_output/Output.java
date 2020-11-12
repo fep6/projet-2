@@ -8,7 +8,7 @@ public class Output {
 	
 	FileWriter writer; 
 	
-	public Output (TreeMap <String,Integer> tMapString) throws IOException{
+	public Output (TreeMap <String,Integer> tMapString) throws IOException {
 		writer = new FileWriter ("./result.out");
 	}
 	
