@@ -14,6 +14,9 @@
     </sourceRole>
     <targetRole xmi:id="_E8tmpiTlEeu-LdVQaTfWJw" aggregationKind="NONE" name="reader" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELLcASTlEeu-LdVQaTfWJw"/>
+      <stereotypes xmi:id="_cYxzACTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELLcAiTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E8tmpyTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E8tmqCTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -31,6 +34,12 @@
     </sourceRole>
     <targetRole xmi:id="_E8u0xiTlEeu-LdVQaTfWJw" aggregationKind="NONE" name="symptomsTxt" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELMDECTlEeu-LdVQaTfWJw"/>
+      <stereotypes xmi:id="_cYyaECTmEeu-LdVQaTfWJw" name="Generics">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELMqICTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_cYyaESTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELNRMCTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E8u0xyTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E8u0yCTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -48,6 +57,9 @@
     </sourceRole>
     <targetRole xmi:id="_E86a9STlEeu-LdVQaTfWJw" aggregationKind="NONE" name="writer" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELNRMSTlEeu-LdVQaTfWJw"/>
+      <stereotypes xmi:id="_cYzBICTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELN4QCTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E86a9iTlEeu-LdVQaTfWJw" label="~"/>
       <cardinality xmi:id="_E86a9yTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -70,6 +82,9 @@
     <targetRole xmi:id="_E9EL8STlEeu-LdVQaTfWJw" aggregationKind="NONE" name="i" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELOfUCTlEeu-LdVQaTfWJw"/>
       <visualProperties xmi:id="_FMwNwCTlEeu-LdVQaTfWJw" position="-20.0,-82.0"/>
+      <stereotypes xmi:id="_cYzBISTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELOfUSTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E9GBIyTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9GBIiTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -92,6 +107,9 @@
     <targetRole xmi:id="_E9EzASTlEeu-LdVQaTfWJw" aggregationKind="NONE" name="o" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPtcCTlEeu-LdVQaTfWJw"/>
       <visualProperties xmi:id="_FMw00iTlEeu-LdVQaTfWJw" position="-24.0,-81.0"/>
+      <stereotypes xmi:id="_cYzoMCTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPtcSTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E9GoNCTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9GoMyTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -113,6 +131,9 @@
     <targetRole xmi:id="_E9JEdiTlEeu-LdVQaTfWJw" aggregationKind="NONE" name="t" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPGYCTlEeu-LdVQaTfWJw"/>
       <visualProperties xmi:id="_FMyqASTlEeu-LdVQaTfWJw" position="-20.5,-80.75"/>
+      <stereotypes xmi:id="_cY0PQCTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPGYSTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E9JEdyTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9JEeCTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -130,6 +151,12 @@
     </sourceRole>
     <targetRole xmi:id="_E9Y8ECTlEeu-LdVQaTfWJw" aggregationKind="NONE" name="tMapString" navigable="true">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELQUgCTlEeu-LdVQaTfWJw"/>
+      <stereotypes xmi:id="_cY0PQSTmEeu-LdVQaTfWJw" name="Generics">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELRioCTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_cY0PQiTmEeu-LdVQaTfWJw" name="LegacyStyledElement">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELRioSTlEeu-LdVQaTfWJw"/>
+      </stereotypes>
       <visibility xmi:id="_E9ZjISTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9ZjICTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
     </targetRole>
@@ -141,9 +168,12 @@
     <visibility xmi:id="_E8u0yyTlEeu-LdVQaTfWJw" label="+"/>
     <attributes xmi:id="_E8u0zCTlEeu-LdVQaTfWJw" name="reader">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELLcASTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E8u0zSTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELLcAiTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY6V4CTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY6V4STmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZCRsCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMVpcCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMWQgCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMcXICTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E8u0ziTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E8u0zyTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E8u00CTlEeu-LdVQaTfWJw" name="BufferedReader">
@@ -152,12 +182,18 @@
     </attributes>
     <attributes xmi:id="_E8u00STlEeu-LdVQaTfWJw" name="symptomsTxt">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELMDECTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E8u00iTlEeu-LdVQaTfWJw" name="Generics">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELMqICTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_E8u00yTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELNRMCTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY688CTmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cY7kACTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY8LECTmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cY8LESTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZCRsSTmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cZC4wCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMWQgSTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMW3kCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMW3kSTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMW3kiTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMc-MCTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMc-MSTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E8u01CTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E8u01STlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E8u01iTlEeu-LdVQaTfWJw" name="ArrayList">
@@ -196,32 +232,18 @@
       </outParameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_E8_6gCTlEeu-LdVQaTfWJw" name="Main">
-    <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHvtgCTlEeu-LdVQaTfWJw"/>
-    <visualProperties xmi:id="_E8_6gSTlEeu-LdVQaTfWJw" position="816.0,95.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_E8_6giTlEeu-LdVQaTfWJw" label="+"/>
-    <operations xmi:id="_E8_6gyTlEeu-LdVQaTfWJw" name="main" staticOperation="true">
-      <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHwUkCTlEeu-LdVQaTfWJw"/>
-      <visibility xmi:id="_E8_6hCTlEeu-LdVQaTfWJw" label="+"/>
-      <cardinality xmi:id="_E8_6hSTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
-      <parameters xmi:id="_E8_6hiTlEeu-LdVQaTfWJw" name="args">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHwUkSTlEeu-LdVQaTfWJw"/>
-        <cardinality xmi:id="_E8_6hyTlEeu-LdVQaTfWJw" label="1..*" max="-1" min="1"/>
-        <type xmi:id="_E8_6iCTlEeu-LdVQaTfWJw" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_E86a-CTlEeu-LdVQaTfWJw" name="Output" associationsIn="_E9C90STlEeu-LdVQaTfWJw" associationsOut="_E85z4CTlEeu-LdVQaTfWJw">
     <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHrcECTlEeu-LdVQaTfWJw"/>
     <visualProperties xmi:id="_E86a-STlEeu-LdVQaTfWJw" position="1131.0,574.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_E86a-iTlEeu-LdVQaTfWJw" label="+"/>
     <attributes xmi:id="_E86a-yTlEeu-LdVQaTfWJw" name="writer">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELNRMSTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E86a_CTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELN4QCTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY8yICTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY8yISTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZDf0CTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMXeoCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMYFsCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMdlQCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E86a_STlEeu-LdVQaTfWJw" label="~"/>
       <cardinality xmi:id="_E86a_iTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E86a_yTlEeu-LdVQaTfWJw" name="FileWriter">
@@ -266,12 +288,18 @@
     <visibility xmi:id="_E9aKMiTlEeu-LdVQaTfWJw" label="+"/>
     <attributes xmi:id="_E9aKMyTlEeu-LdVQaTfWJw" name="tMapString">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELQUgCTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E9aKNCTlEeu-LdVQaTfWJw" name="Generics">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELRioCTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_E9aKNSTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELRioSTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cZAcgCTmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cZAcgSTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZBDkCTmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cZBqoCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZDf0STmEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_cZEG4CTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMbJACTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMbJASTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMbwECTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMbwESTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMeMUCTnEeu-LdVQaTfWJw" name="Generics"/>
+      <stereotypes xmi:id="_WMezYCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E9aKNiTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9aKNyTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E9aKOCTlEeu-LdVQaTfWJw" name="TreeMap">
@@ -323,9 +351,12 @@
     <visibility xmi:id="_E9JrgiTlEeu-LdVQaTfWJw" label="+"/>
     <attributes xmi:id="_E9JrgyTlEeu-LdVQaTfWJw" name="i">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELOfUCTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E9JrhCTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELOfUSTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY9ZMCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY9ZMSTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZEG4STmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMYFsSTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMYswCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMfacCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E9JrhSTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9JrhiTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E9JrhyTlEeu-LdVQaTfWJw" name="Input">
@@ -334,9 +365,12 @@
     </attributes>
     <attributes xmi:id="_E9JriCTlEeu-LdVQaTfWJw" name="t">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPGYCTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E9JriSTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPGYSTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY_OYCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY_OYSTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZEt8CTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMZ64STnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMah8CTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMgBgCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E9JriiTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9JriyTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E9JrjCTlEeu-LdVQaTfWJw" name="Treatment">
@@ -345,9 +379,12 @@
     </attributes>
     <attributes xmi:id="_E9JrjSTlEeu-LdVQaTfWJw" name="o">
       <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPtcCTlEeu-LdVQaTfWJw"/>
-      <stereotypes xmi:id="_E9JrjiTlEeu-LdVQaTfWJw" name="LegacyStyledElement">
-        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_ELPtcSTlEeu-LdVQaTfWJw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_cY-AQCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cY-nUCTmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_cZEt8STmEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMYswSTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMZ64CTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_WMgokCTnEeu-LdVQaTfWJw" name="LegacyStyledElement"/>
       <visibility xmi:id="_E9JrjyTlEeu-LdVQaTfWJw" label="-"/>
       <cardinality xmi:id="_E9JrkCTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
       <type xmi:id="_E9JrkSTlEeu-LdVQaTfWJw" name="Output">
@@ -374,5 +411,22 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_uAK88CTlEeu-LdVQaTfWJw" sourceConnectionVisual="_uAK88STlEeu-LdVQaTfWJw" text="symptoms.txt memorized&#xD;&#xA;&#x9; * @return" item="_E8u04CTlEeu-LdVQaTfWJw">
     <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_uAHSkCTlEeu-LdVQaTfWJw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_E8_6gCTlEeu-LdVQaTfWJw" name="Main">
+    <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHvtgCTlEeu-LdVQaTfWJw"/>
+    <visualProperties xmi:id="_E8_6gSTlEeu-LdVQaTfWJw" position="837.0,90.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_E8_6giTlEeu-LdVQaTfWJw" label="+"/>
+    <operations xmi:id="_E8_6gyTlEeu-LdVQaTfWJw" name="main" staticOperation="true">
+      <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHwUkCTlEeu-LdVQaTfWJw"/>
+      <visibility xmi:id="_E8_6hCTlEeu-LdVQaTfWJw" label="+"/>
+      <cardinality xmi:id="_E8_6hSTlEeu-LdVQaTfWJw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_E8_6hiTlEeu-LdVQaTfWJw" name="args">
+        <modelElement href="Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application-master.uml#_EHwUkSTlEeu-LdVQaTfWJw"/>
+        <cardinality xmi:id="_E8_6hyTlEeu-LdVQaTfWJw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_E8_6iCTlEeu-LdVQaTfWJw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
