@@ -17,12 +17,7 @@ public class Treatment {
 	}
 	
 	public void doTreatment(ArrayList<String> symptomsTxt ){
-		
-		 // sort the ArrayList in ascending order (for verification)
-		 symptomsTxt.sort(Comparator.naturalOrder());
-		 System.out.println("Fichier classé= " + symptomsTxt);  
-		 System.out.println("______________________________");
-		
+	
 		
 		// Integration of symptomTxt in a TreeMap, the sysptom is becoming a key, an ID)
 		for (String key : symptomsTxt) {
